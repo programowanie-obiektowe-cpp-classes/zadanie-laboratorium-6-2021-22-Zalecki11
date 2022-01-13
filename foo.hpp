@@ -16,5 +16,5 @@ std::vector< char > foo(std::list< Human >& people)
     std::transform(begin(people), end(people), rbegin(ret_v), [](Human& person) 
     {  return person.isMonster() ? 'n' : 'y'; });
 
-    return x;
+    return ret_v;
 }
